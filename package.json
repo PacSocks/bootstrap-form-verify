@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-form-verify",
-  "version": "5v1.0.0-beta.1.1",
+  "version": "5v1.0.0-beta.1.2",
   "description": "Pure JS to show users feedback through forms in Bootstrap",
-  "homepage": "https://github.com/PacSocks/bootstrap-form-verify/tree/5v1.0.0-beta.1.1",
-  "browser": "./lib/index.min.js"
+  "homepage": "https://github.com/PacSocks/bootstrap-form-verify/tree/5v1.0.0-beta.1.2",
+  "browser": "lib/index.min.js"
 }
