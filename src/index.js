@@ -5,13 +5,13 @@ FormVerify = {
       e.classList.add(`is-valid`);
     }
     if(s){
-      let f = e.getElementsByClassName(`valid-feedback`)[0] ?? (()=>{
+      let f = e.parentElement.getElementsByClassName(`valid-feedback`)[0] ?? (()=>{
         let f = document.createElement(`DIV`);
         f.classList.add(`valid-feedback`);
         e.parentElement.append(f);
         return f;
       })();
-      f.textContent = s;
+      f.textContent = s ?? ``;
     }
   },
   invalid: (e,s)=>{
@@ -20,13 +20,13 @@ FormVerify = {
       e.classList.add(`is-invalid`);
     }
     if(s){
-      let f = e.getElementsByClassName(`valid-feedback`)[0] ?? (()=>{
+      let f = e.parentElement.getElementsByClassName(`valid-feedback`)[0] ?? (()=>{
         let f = document.createElement(`DIV`);
         f.classList.add(`valid-feedback`);
         e.parentElement.append(f);
         return f;
       })();
-      f.textContent = s;
-    }else{f.textContent=``;}
+      f.textContent = s ?? ``;
+    }
   }
 }
