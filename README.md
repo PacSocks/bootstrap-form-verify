@@ -1,5 +1,6 @@
 # bootstrap-form-verify
 Pure JS to show users feedback through forms in Bootstrap
+[![](https://data.jsdelivr.com/v1/package/gh/PacSocks/bootstrap-form-verify/badge)](https://www.jsdelivr.com/package/gh/PacSocks/bootstrap-form-verify)
 
 ## Guide
 ```js
