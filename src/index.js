@@ -1,4 +1,4 @@
-FormVerify = {
+globalThis.FormVerify = {
   valid: (e,s)=>{
     if(e.classList.contains(`is-invalid`))e.classList.remove(`is-invalid`);
     if(!e.classList.contains(`is-valid`)){
