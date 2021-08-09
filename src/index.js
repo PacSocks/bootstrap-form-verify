@@ -5,7 +5,7 @@ FormVerify = {
       e.classList.add(`is-valid`);
     }
     if(s){
-      let f = e.getElementByClassName(`valid-feedback`)[0]?(()=>{
+      let f = e.getElementByClassName(`valid-feedback`)[0] ?? (()=>{
         let f = document.createElement(`DIV`);
         f.classList.add(`valid-feedback`);
         e.parentElement.append(f);
@@ -20,13 +20,13 @@ FormVerify = {
       e.classList.add(`is-invalid`);
     }
     if(s){
-      let f = e.getElementByClassName(`valid-feedback`)[0]?(()=>{
+      let f = e.getElementByClassName(`valid-feedback`)[0] ?? (()=>{
         let f = document.createElement(`DIV`);
         f.classList.add(`valid-feedback`);
         e.parentElement.append(f);
         return f;
       })();
       f.textContent = s;
-    }
+    }else{f.textContent=``;}
   }
 }
