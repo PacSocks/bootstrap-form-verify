@@ -20,9 +20,9 @@ FormVerify = {
       e.classList.add(`is-invalid`);
     }
     if(s){
-      let f = e.parentElement.getElementsByClassName(`valid-feedback`)[0] ?? (()=>{
+      let f = e.parentElement.getElementsByClassName(`invalid-feedback`)[0] ?? (()=>{
         let f = document.createElement(`DIV`);
-        f.classList.add(`valid-feedback`);
+        f.classList.add(`invalid-feedback`);
         e.parentElement.append(f);
         return f;
       })();
